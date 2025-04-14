@@ -53,11 +53,11 @@ We are searching for 2 target states among all possible quantum states in the de
 
 If we have 2 marked states of length 3 (010 and 001), we get a reliable outcome:
 
-![Description of image](demo1_results_3qubits.png)
+![Description of image](demo1_3qubits.png)
 
 But if we increase the number of qubits by one, and have staes of length 4 (0110, 1001), we do not get reliable results:
 
-![Description of image](demo1_results_4qubits.png)
+![Description of image](demo1_4qubits.png)
 
 This indicates that quantum hardware being used is not yet efficient enough to work with larger data.
 
