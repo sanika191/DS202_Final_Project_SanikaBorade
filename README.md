@@ -27,7 +27,7 @@ pip install matplotlib
 pip install 'qiskit[visualization]'
 ```
 To set up the IBM quantum platform, follow the instructions here: https://docs.quantum.ibm.com/guides/setup-channel.
-Essentially, you need to create an account on the IBM Quantum login page. The retrieve the API key from there, ans use it as ```<your_token>```, to run the following:
+Essentially, you need to create an account on the IBM Quantum login page. Then retrieve the API key from there, and use it as ```<your_token>```, to run the following:
 
 ```
 from qiskit_ibm_runtime import QiskitRuntimeService
@@ -40,7 +40,7 @@ QiskitRuntimeService.save_account(
 service = QiskitRuntimeService()
 ```
 
-Once we have all the dependencies in place, we can run the groverdemo.py in the cirtual environment.
+Once we have all the dependencies in place, we can run the groverdemo.py in the virtual environment.
 
 ```
 > & <path to virtual env>/Scripts/python.exe <path to groverdemo.py>/groverdemo.py
@@ -53,7 +53,7 @@ If we have 2 marked states of length 3 (010 and 001), we get a reliable outcome:
 
 ![Description of image](demo1_3qubits.png)
 
-But if we increase the number of qubits by one, and have staes of length 4 (0110, 1001), we do not get reliable results:
+But if we increase the number of qubits by one, and have states of length 4 (0110, 1001), we do not get reliable results:
 
 ![Description of image](demo1_4qubits.png)
 
@@ -66,7 +66,7 @@ This is how the runtime of these workloads is seen on my IBM quantum dashboard:
 
 ## Demo 2
 
-Create a virtual environment, activate it and install required Qiskit dependencies. The string matching demo requires the older version of qiskit.
+Create a virtual environment, activate it and install required Qiskit dependencies. This string matching demo requires the older version of qiskit.
 
 ```
 python -m venv qiskit_env2
