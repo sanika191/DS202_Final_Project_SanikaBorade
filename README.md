@@ -8,7 +8,7 @@ This demo showcases a **quantum string matching algorithm**, designed to identif
 
 Qiskit is an open source software development kit for quantum computing. It allows users to create and run quantum programs on simulators or quantum hardware. Qiskit has been undergoing rapid developmental changes due to developments in teh field of quantum computing.
 
-Qiskit underwent breaking changes as it switched from its older Qiskit 0.46 version to Qiskit 1.0 in 2024. Most of the commands and packages used look different and the older codes are not at all compatible with the new version. For Demo 1, we will be using Qiskit 1.0 and the Qiskit Runtime service, which allows us to execute quantum computations on IBM quantum hardware. For Demo 2, we will be using the older Qiskit 0.45.0, along with the corresponding older packages.
+Qiskit introduced significant breaking changes with the release of version 1.0 in 2024, moving away from the structure used in Qiskit 0.46 and earlier. Many commands and packages have been restructured, making older code incompatible with the new version. In Demo 1, we will use Qiskit 1.0 along with the Qiskit Runtime service to run quantum programs on IBM’s quantum hardware. In Demo 2, we’ll work with Qiskit 0.45.0 and its associated legacy packages. Each demo will run in its own virtual environment to manage the different Qiskit versions, and all of them will require Python.
 
 ## Demo 1
 This ia a demo of the Grover's algorithm, taken from https://learning.quantum.ibm.com/tutorial/grovers-algorithm. To run this on a quantum hardware, requires the creation of a personal account on IBM Qiskit. This gives you free 10 minutes of runtime on quantum hardware per month. 
@@ -66,7 +66,7 @@ This is how the runtime of these workloads is seen on my IBM quantum dashboard:
 
 ## Demo 2
 
-To run the string matching demo, ensure you have the python installed. Create a virtual environment, activate it and install required Qiskit dependencies. The string matching demo requires the older version of qiskit.
+Create a virtual environment, activate it and install required Qiskit dependencies. The string matching demo requires the older version of qiskit.
 
 ```
 python -m venv qiskit_env2
