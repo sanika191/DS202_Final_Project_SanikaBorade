@@ -15,14 +15,7 @@ Qiskit underwent breaking changes as it switched from its older Qiskit 0.46 vers
 ## Demo 1
 This ia a demo of the Grover's algorithm, taken from 'https://learning.quantum.ibm.com/tutorial/grovers-algorithm'. To run this on a quantum hardware, requires the creation of a personal account on IBM Qiskit. This gives you free 10 minutes of runtime on quantum hardware per month. 
 
-We are searching for 2 target states among all possible quantum states in the demo. The ```marked_states``` array stores these states. The code searches for an IBM system which is least in use and uses that to execute the backend operations.
-
-If we have states of length 3, we get a reliable outcome:
-
-But if we increase the number of qubits by one, and have staes of length 4, the results are not favourable. This indicates that quantum hardware is not yet efficient enough to work  with larger data.
-
-
-
+ First, we install the required packages in our virtual environment:
 ```
 python -m venv qiskit_env1
 qiskit_env1\Scripts\activate
@@ -52,7 +45,21 @@ service = QiskitRuntimeService()
 Once we have all the dependencies in place, we can run the groverdemo.py in the cirtual environment.
 
 ```
-& S:/Sem6/grover/groverdemo/Scripts/python.exe s:/Sem6/grover/groverdemo/demo.py
+> & <path to virtual env>/Scripts/python.exe <path to groverdemo.py>/groverdemo.py
+```
+
+### Results
+We are searching for 2 target states among all possible quantum states in the demo. The ```marked_states``` array stores these states. The code searches for an IBM system which is least in use and uses that to execute the backend operations.
+
+If we have 2 marked states of length 3 (010 and 001), we get a reliable outcome:
+
+![Description of image](demo1_results_3qubits.png)
+
+But if we increase the number of qubits by one, and have staes of length 4 (0110, 1001), we do not get reliable results:
+
+![Description of image](demo1_results_4qubits.png)
+
+This indicates that quantum hardware being used is not yet efficient enough to work with larger data.
 
 
 
@@ -79,7 +86,11 @@ We also require the following to visualise our results:
 pip install matplotlib
 pip install 'qiskit[visualization]'
 ```
-Now you can run the script _stringmatchingdemo.py_ in this virtual environment.
+Once we have all the dependencies in place, we can run the script _stringmatchingdemo.py_ in the virtual environment.
+
+```
+> & <path to virtual env>/Scripts/python.exe <path to stringmatchingdemo.py>/stringmatchingdemo.py
+```
 
 ### Results
 
