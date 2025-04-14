@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This demo showcases a **quantum string matching algorithm**, designed to identify whether a given substring exists within a larger string using principles from quantum computing. It serves as a basic illustration of how quantum parallelism and interference can be leveraged to accelerate string search problems compared to classical approaches.
-
-The algorithm is implemented using **Qiskit**, a Python-based framework for quantum computing. While this version is simulated on a classical backend, it lays the groundwork for future deployment on real quantum hardware.
+This demo showcases a **quantum string matching algorithm**, designed to identify whether a given substring exists within a larger string using principles from quantum computing. The algorithm is implemented using **Qiskit**, a Python-based framework for quantum computing.
 
 ## Qiskit 
 
@@ -13,9 +11,9 @@ Qiskit is an open source software development kit for quantum computing. It allo
 Qiskit underwent breaking changes as it switched from its older Qiskit 0.46 version to Qiskit 1.0 in 2024. Most of the commands and packages used look different and the older codes are not at all compatible with the new version. For Demo 1, we will be using Qiskit 1.0 and the Qiskit Runtime service, which allows us to execute quantum computations on IBM quantum hardware. For Demo 2, we will be using the older Qiskit 0.45.0, along with the corresponding older packages.
 
 ## Demo 1
-This ia a demo of the Grover's algorithm, taken from 'https://learning.quantum.ibm.com/tutorial/grovers-algorithm'. To run this on a quantum hardware, requires the creation of a personal account on IBM Qiskit. This gives you free 10 minutes of runtime on quantum hardware per month. 
+This ia a demo of the Grover's algorithm, taken from https://learning.quantum.ibm.com/tutorial/grovers-algorithm. To run this on a quantum hardware, requires the creation of a personal account on IBM Qiskit. This gives you free 10 minutes of runtime on quantum hardware per month. 
 
- First, we install the required packages in our virtual environment:
+First, we install the required packages in our virtual environment:
 ```
 python -m venv qiskit_env1
 qiskit_env1\Scripts\activate
@@ -61,7 +59,9 @@ But if we increase the number of qubits by one, and have staes of length 4 (0110
 
 This indicates that quantum hardware being used is not yet efficient enough to work with larger data.
 
+This is how the runtime of these workloads is seen on my IBM quantum dashboard:
 
+![Description of image](ibm_qpu_usage.png)
 
 
 ## Demo 2
@@ -96,8 +96,16 @@ Once we have all the dependencies in place, we can run the script _stringmatchin
 
 The code accepts strings x (the binary pattern) and string y (the binary text), such that length of y > length of x. It returns the position of occurrence of x in y. It also plots corresponding histograms, which indicate the number of times each output is obtained in 100 runs of the curcuit.
 
-Refer slides for relevant histogram plots.
+Refer to slides for relevant histogram plots.
 
+
+## References
+
+1. Niroula, P., Nam, Y. A quantum algorithm for string matching. npj Quantum Inf 7, 37 (2021). https://doi.org/10.1038/s41534-021-00369-3
+
+2. The implementatin code for string matching was taken from: https://doi.org/10.1145/3660318.3660327
+
+3. The implementation code for grovers algorithm was taken from:  https://learning.quantum.ibm.com/tutorial/grovers-algorithm
 
 
 
